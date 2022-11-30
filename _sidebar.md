@@ -2,4 +2,4 @@
 
 * [首页](/)
 * [笔记](/notes/)
-* [实验数据](/experiment%20data/)
+* [实验数据](/experiment/)
