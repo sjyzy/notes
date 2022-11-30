@@ -1,4 +1,4 @@
-# 笔记库
+# 笔记
 
 ## 深度学习笔记
 ### 数据集处理
@@ -20,6 +20,18 @@
 [python解释器以及注册机制](/notes/python%E8%A7%A3%E9%87%8A%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6.md)  
 ### 其他
 [pandas笔记](/notes/pandas%E7%AC%94%E8%AE%B0.md)  
-[python解释器以及注册机制](/notes/python%E8%A7%A3%E9%87%8A%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6.md)  
 
+## 论文笔记
+### 小样本学习
+#### 表征学习
+[DIM](/notes/FSL/%E8%A1%A8%E5%BE%81%E5%AD%A6%E4%B9%A0/DIM_AMDIM.md) 
+#### 跨域 
+[RDC](/notes/FSL/%E8%B7%A8%E5%9F%9F/RDC/RDC.md)
+#### 数据增强
+[delta encoder](/notes/FSL/%E6%95%B0%E6%8D%AE%E6%89%A9%E5%85%85/delta%20encoder_DTN.md)
+#### 元学习
+[MAML](/notes/FSL/%E5%85%83%E5%AD%A6%E4%B9%A0/MAML.md)
+[FCTransforer](/notes/FSL/%E5%85%83%E5%AD%A6%E4%B9%A0/FCTransformer/FCTransformer.md)
+#### 正则化
+[S2M2](/notes/FSL/%E6%AD%A3%E5%88%99%E5%8C%96%E6%96%B9%E6%B3%95/S2M2(mixup)_LAPShot.md)
 
