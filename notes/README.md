@@ -1,5 +1,6 @@
-# 笔记
+<link rel="stylesheet" type="text/css" href="/themes/whitey.css">
 
+# 笔记
 ## 深度学习笔记
 ### 数据集处理
 [CUB数据格式](/notes/CUB%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.md)  

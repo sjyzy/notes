@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="/themes/whitey.css">
 
 # 小样本学习技巧分析
 ## 实验记录
