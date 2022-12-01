@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/themes/whitey.css">
+<link rel="stylesheet" type="text/css" href="/themes/academic.css">
 
 
 # 不以物喜，不以己悲
