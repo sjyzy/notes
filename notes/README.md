@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/themes/academic.css">
+<link rel="stylesheet" type="text/css" href="/themes/newsprint.css">
 
 # 笔记
 ## 深度学习笔记
