@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="/themes/newsprint.css">
+
 # 链接
 [markdown语法](https://markdown.com.cn/extended-syntax/footnotes.html)  
 [versel](https://vercel.com/sjyzy/notes)  
