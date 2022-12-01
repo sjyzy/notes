@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-<link rel="stylesheet" type="text/css" href="/themes/whitey.css">
+<link rel="stylesheet" type="text/css" href="/themes/newsprint.css">
 
 # 学习
 ## [首页](/)
