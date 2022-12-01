@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/themes/newsprint.css">
+<!-- <link rel="stylesheet" type="text/css" href="/themes/newsprint.css"> -->
 
 # 小样本学习技巧分析
 ## 实验记录
