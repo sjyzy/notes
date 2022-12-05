@@ -1,7 +1,12 @@
 <!-- <link rel="stylesheet" type="text/css" href="/themes/newsprint.css"> -->
 
-# 链接
-[markdown语法](https://markdown.com.cn/extended-syntax/footnotes.html)  
-[versel](https://vercel.com/sjyzy/notes)  
-[docify](https://docsify.js.org/#/zh-cn/)
-[namesilo](https://www.namesilo.com/account_domains.php)
+* 工具链接
+  * [markdown语法](https://markdown.com.cn/extended-syntax/footnotes.html)  
+  * [versel](https://vercel.com/sjyzy/notes)  
+  * [docify](https://docsify.js.org/#/zh-cn/)
+  * [namesilo](https://www.namesilo.com/account_domains.php)
+* 学习链接
+  * [MMDetection训练相关源码详解](https://zhuanlan.zhihu.com/p/163747610)
+  * [Focal Loss](https://blog.csdn.net/BIgHAo1/article/details/121783011)
+  * [NWD小目标度量方法](https://blog.csdn.net/Yong_Qi2015/article/details/121391566)
+  * [NWD2小目标度量方法](https://zhuanlan.zhihu.com/p/461412860)
