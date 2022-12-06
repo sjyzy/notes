@@ -5,12 +5,11 @@
 ---
 
 * 学习
-    * [《笔记》](/notes/)  
-    
-    * [《实验数据》](/experiment/)  
+  * [《笔记》](/notes/)  
+  * [《实验数据》](/experiment/)  
+  * [《学习链接》](/interlinkage.md)
 
-    * [《学习链接》](/interlinkage.md)
 ---
-* 生活
 
-    * [《日志》](/diary/)
+* 生活
+  * [《日志》](/diary/)
