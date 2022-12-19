@@ -10,6 +10,7 @@
     * [Focal Loss](https://blog.csdn.net/BIgHAo1/article/details/121783011)
     * [NWD小目标度量方法](https://blog.csdn.net/Yong_Qi2015/article/details/121391566)
     * [NWD2小目标度量方法](https://zhuanlan.zhihu.com/p/461412860)
+    * [mmdetction训练原理_yolox](https://blog.csdn.net/weixin_41179162/article/details/122642506)
 * Linux指令链接
     * [.sh脚本](http://c.biancheng.net/view/739.html)
 
