@@ -13,4 +13,5 @@
     * [mmdetction训练原理_yolox](https://blog.csdn.net/weixin_41179162/article/details/122642506)
 * Linux指令链接
     * [.sh脚本](http://c.biancheng.net/view/739.html)
+    * [nas挂载教程](https://blog.csdn.net/chenzhiwen1998/article/details/119613471)
 
