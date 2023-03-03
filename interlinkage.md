@@ -2,7 +2,7 @@
 
 * 工具链接
     * [markdown语法](https://markdown.com.cn/extended-syntax/footnotes.html)  
-    * [versel](https://vercel.com/sjyzy/notes)  
+    * [versel](https://vercel.com/sjyzy)  
     * [docify](https://docsify.js.org/#/zh-cn/)
     * [namesilo](https://www.namesilo.com/account_domains.php)
     * [sourcetree](https://www.sourcetreeapp.com/)
@@ -16,5 +16,5 @@
     * [.sh脚本](http://c.biancheng.net/view/739.html)
     * [nas挂载教程](https://blog.csdn.net/chenzhiwen1998/article/details/119613471)
 - github链接
-	- [chatgpt部署](https://github.com/vercel/examples/tree/main/solutions/ai-chatgpt)
+	- [chatgpt自动部署](https://github.com/vercel/examples/tree/main/solutions/ai-chatgpt)
 

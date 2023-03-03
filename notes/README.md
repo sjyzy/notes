@@ -36,3 +36,6 @@
 #### 正则化
 [S2M2](/notes/FSL/%E6%AD%A3%E5%88%99%E5%8C%96%E6%96%B9%E6%B3%95/S2M2(mixup)_LAPShot.md)
 
+## 计算机配置
+
+[clash](/notes/计算机配置/clash.md)
