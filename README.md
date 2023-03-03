@@ -87,6 +87,8 @@ Advice is like snow-the softer it falls,the longer it dwell upon,and the deeper 
 The mark of the immature man is that he wants to die nobly for a cause, While the mark of the mature man is that he wants to live humble for one.
 不成熟的人的标志是他想为一项事业高贵地死去，而成熟的人的标志是他想为一项事业卑微地活着。
 
+世之奇伟，瑰怪，非常之观，常在于险远而人之所罕至焉，故非有志者不能至也。
+
 
 
 ## 没得选这事是人生常态
