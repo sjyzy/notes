@@ -2,7 +2,7 @@
 <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"> -->
 
 *  **[主页](/)**  
-* 用过的网站都在这里 ^_^
+* 用过的网站都在这里 :smile:
 
 ---
 

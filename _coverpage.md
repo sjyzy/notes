@@ -1,14 +1,17 @@
 <!-- _coverpage.md -->
 
-![logo](_media/icon.svg)
+![logo](/_media/logo.png)
 
-# docsify <small>3.5</small>
+# SJY <small>zy</small>
 
-> A magical documentation site generator.
+> 记录生活，记录学习，记录感想.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- 平常之心，
+- 情意澎湃，
+- 谨对危机，
+- 莫待无情。
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/sjyzy)
+[Get Started](/notes/)
+
+

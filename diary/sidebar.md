@@ -2,7 +2,7 @@
 <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"> -->
 
 *  **[主页](/)**  
-* 日常工作 ^_^
+* 日常工作 :smile:
 
 ---
 
