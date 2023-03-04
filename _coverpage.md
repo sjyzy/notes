@@ -12,6 +12,10 @@
 - 莫待无情。
 
 [GitHub](https://github.com/sjyzy)
-[Get Started](/notes/)
+[Get Started](/)
 
+
+<!-- background color -->
+
+![color](#ffffff)
 
