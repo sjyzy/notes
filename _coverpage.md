@@ -2,7 +2,7 @@
 
 ![logo](/_media/logo_4.png)
 
-# SJY <medium>zy</medium>
+# SJY <small>zy</small>
 
 > 记录生活，记录学习，记录感想.
 

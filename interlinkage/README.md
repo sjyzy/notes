@@ -9,9 +9,9 @@
 [docify](https://docsify.js.org/#/zh-cn/)  
 [namesilo](https://www.namesilo.com/account_domains.php)  
 [sourcetree](https://www.sourcetreeapp.com/)   
-[AI抠图](https://www.magiceraser.io/)
-[copilot of sdpkjc](https://chatbot.sdpkjc.com)
-
+[AI抠图](https://www.magiceraser.io/)  
+[copilot of sdpkjc](https://chatbot.sdpkjc.com)  
+[实验室nas链接](https://casit-aris-nas.cn2.quickconnect.cn/)  
 ## 深度学习链接
 [MMDetection训练相关源码详解](https://zhuanlan.zhihu.com/p/163747610)  
 [Focal Loss](https://blog.csdn.net/BIgHAo1/article/details/121783011)  
