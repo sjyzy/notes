@@ -55,4 +55,4 @@
 
 [sourcetree](/notes/计算机配置/git_sourcetree.md)  
 
-[ Linux(Ubuntu)通过NFS服务挂载群晖NAS为虚拟磁盘](https://blog.csdn.net/chenzhiwen1998/article/details/119613471#:~:text=Linux (Ubuntu)通过NFS服务挂载群晖NAS为虚拟磁盘 1 0. 前言 2 1.,设置NAS，共享目录 3 2. 服务器执行挂载命令 4 3. 查看挂载结果)
+[Linux(Ubuntu)通过NFS服务挂载群晖NAS为虚拟磁盘](https://blog.csdn.net/chenzhiwen1998/article/details/119613471#:~:text=Linux)
