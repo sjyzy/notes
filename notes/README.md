@@ -2,6 +2,9 @@
 
 # 笔记
 ## 深度学习笔记
+
+
+
 ### 数据集处理
 
 
@@ -32,6 +35,11 @@
 [pandas笔记](/notes/pandas%E7%AC%94%E8%AE%B0.md)    
 
 ## 论文笔记
+
+### 目标检测
+
+[YOLOX概述_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1C44y1P7kJ?p=1&vd_source=3bd892ebd73374b8a997d6f84d7cccbb)
+
 ### 小样本学习
 #### 表征学习
 [DIM](/notes/FSL/%E8%A1%A8%E5%BE%81%E5%AD%A6%E4%B9%A0/DIM_AMDIM.md) 
