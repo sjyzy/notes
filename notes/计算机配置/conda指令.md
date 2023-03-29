@@ -59,6 +59,7 @@ conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/tensorflow/l
 conda install -c conda-forge conda-pack
 # 打包
 conda pack -n 虚拟环境名称 -o 目标虚拟环境名.tar.gz
+# 如果报错尝试 在后面添加--ignore-editable-packages
 # 在envs目录下
 tar -xzvf output.tar.gz -C /anaconda(或者miniconda)/envs/创建的文件夹/
 conda env list
