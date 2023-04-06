@@ -13,7 +13,9 @@
 [copilot of sdpkjc](https://chatbot.sdpkjc.com)  
 [实验室nas链接](https://casit-aris-nas.cn2.quickconnect.cn/)  
 [佰腾网 - 查专利就上佰腾网 (baiten.cn)](https://www.baiten.cn/)  
-[Image Upscaler Online – AI 放大照片而不损失质量 (vidmore.com)](https://www.vidmore.com/zh/image-upscaler/)
+[Image Upscaler Online – AI 放大照片而不损失质量 (vidmore.com)](https://www.vidmore.com/zh/image-upscaler/)  
+[Clash for Windows | Clash for Windows (lbyczf.com)](https://docs.cfw.lbyczf.com/)
+
 
 
 
