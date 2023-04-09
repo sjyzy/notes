@@ -2,73 +2,260 @@
 
 # code
 ## 数据处理
-## 图像处理
-[将图像背景变透明](/code/imgBG_to_transparency.py)
+
+### 融合数据集（yolo标签版）
+
+```python
+import os
+import shutil
+import uuid
+def merge_datasets(dataset1_path, dataset2_path, output_path):
+    a = 0
+    for dataset_path in [dataset1_path, dataset2_path]:
+        for split in ['train', 'val']:
+            for data_type in ['images', 'labels']:
+                src_dir = os.path.join(dataset_path, split, data_type)
+                dest_dir = os.path.join(output_path, split, data_type)
+                os.makedirs(dest_dir, exist_ok=True)
+
+                for file in os.listdir(src_dir):
+                    a += 1
+                    file_base, file_ext = os.path.splitext(file)
+                    new_file_base = str(a).zfill(7)
+                    new_file = f"{new_file_base}{file_ext}"
+                    src_file = os.path.join(src_dir, file)
+                    dest_file = os.path.join(dest_dir, new_file)
+                    shutil.copy(src_file, dest_file)
+
+                    # Maintain one-to-one correspondence between images and labels
+                    if data_type == 'images':
+                        label_ext = '.txt'
+                        src_label = os.path.join(src_dir.replace('/images', '/labels'), f"{file_base}{label_ext}")
+                        dest_label = os.path.join(dest_dir.replace('/images', '/labels'), f"{new_file_base}{label_ext}")
+                        print(src_label)  # Debug: print src_label
+                        print(dest_label)  # Debug: print dest_label
+                        shutil.copy(src_label, dest_label)
 
 
-### 数据集处理
+# Define the paths to the two datasets and the output directory
+dataset1_path = "/nas_data/SJY/code/yolov7/person_phone"
+dataset2_path = "/nas_data/SJY/code/yolov7/smoke"
+output_path = "/nas_data/SJY/code/yolov7/dataset"
 
+# Merge the two datasets into one
+merge_datasets(dataset1_path, dataset2_path, output_path)
+
+print("Merged the datasets and created train and test image list files.")
+```
+
+### 生成图片本地绝对路径文件（yolo标签）
+
+```python
+import os
+
+def save_image_paths(input_dir, output_file):
+    image_extensions = ('.jpg', '.jpeg', '.png', '.bmp')
+
+    with open(output_file, 'w') as f_out:
+        for root, _, files in os.walk(input_dir):
+            for file in files:
+                if file.lower().endswith(image_extensions):
+                    abs_path = os.path.abspath(os.path.join(root, file))
+                    f_out.write(abs_path + '\n')
+
+if __name__ == "__main__":
+    input_dir = '/nas_data/SJY/code/yolov7/dataset/images/val'
+    output_file = '/nas_data/SJY/code/yolov7/dataset/val_list.txt'
+
+    if not os.path.exists(input_dir):
+        print(f"The input directory '{input_dir}' does not exist.")
+    else:
+        save_image_paths(input_dir, output_file)
+        print(f"Image paths successfully saved in '{output_file}'.")
+```
+
+### 更改标签编号（yolo标签）
+
+```python
+import os
+
+def convert_label(input_file, output_file):
+    with open(input_file, 'r') as f_in, open(output_file, 'w') as f_out:
+        for line in f_in:
+            data = line.strip().split()
+
+            if data[0] == '0':
+                data[0] = '2'
+
+            f_out.write(' '.join(data) + '\n')
+
+def process_directory(input_dir, output_dir):
+    if not os.path.exists(input_dir):
+        print(f"The input directory '{input_dir}' does not exist.")
+        return
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    for filename in os.listdir(input_dir):
+        if filename.endswith(".txt"):
+            input_file = os.path.join(input_dir, filename)
+            output_file = os.path.join(output_dir, filename)
+            convert_label(input_file, output_file)
+
+if __name__ == "__main__":
+    input_dir = '/nas_data/SJY/code/yolov7/smoke/val/labels_ori'
+    output_dir = '/nas_data/SJY/code/yolov7/smoke/val/labels'
+
+    process_directory(input_dir, output_dir)
+    print(f"Labels successfully converted and saved in '{output_dir}'.")
+```
+
+### CUB数据格式
 
 [CUB数据格式](/notes/CUB%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.md)  
+
+### 切割数据集
+
 [切割数据集](/notes/%E5%88%87%E5%89%B2%E6%95%B0%E6%8D%AE%E9%9B%86.md)  
+
+### voc转coco
 [voc转coco](/notes/voc%E8%BD%ACcoco.md)  
-[图片数据集转txt流程](/notes/%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BD%ACtxt%E6%B5%81%E7%A8%8B.md)
 
-[map计算方法](https://zhuanlan.zhihu.com/p/399837729)
+### 图片数据集转txt流程
 
-### 模型复现
+[图片数据集转txt流程](/notes/%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BD%ACtxt%E6%B5%81%E7%A8%8B.md)  
+### coco选择指定标签转yolo
 
-[pytorch api笔记](/notes/pytorch%20api%E7%AC%94%E8%AE%B0.md)  
-[复刻googlenet](/notes/%E5%A4%8D%E5%88%BBgooglenet.md)  
-[复刻lenet](/notes/%E5%A4%8D%E5%88%BBlenet.md)  
-[复刻lenet时遇到的错误](/notes/%E5%A4%8D%E5%88%BBlenet%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF.md.md)  
-[目标检测](/notes/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B.md)  
-[微调](/notes/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0.md)  
-[pytorch实现线性回归](/notes/pytorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.md)
+```python
+import os
+import json
+import shutil
+from pycocotools.coco import COCO
 
-### mmlab笔记
-[130实验bug记录](/notes/130%E5%AE%9E%E9%AA%8Cbug%E8%AE%B0%E5%BD%95.md)  
-[mmcv_config笔记](/notes/mmcv_config%E7%AC%94%E8%AE%B0.md)  
-[python解释器以及注册机制](/notes/python%E8%A7%A3%E9%87%8A%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6.md)  
-[训练可视化工具哪款是你的菜？MMCV一行代码随你挑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/387078211)
+def convert_to_yolo_format(bbox, img_width, img_height):
+    x, y, width, height = bbox
+    x_center = x + width / 2
+    y_center = y + height / 2
+    return [
+        x_center / img_width,
+        y_center / img_height,
+        width / img_width,
+        height / img_height,
+    ]
 
-### 其他
-[pandas笔记](/notes/pandas%E7%AC%94%E8%AE%B0.md)    
+# Define the paths to the COCO dataset
+coco_images_path = "/nas_data/COMMON/dataset/coco/val2017"
+annotations_path = "/nas_data/COMMON/dataset/coco/annotations/instances_val2017.json"
+# annotations_path = "/nas_data/COMMON/dataset/coco/annotations/instances_train2017.json"
 
-## 论文笔记
 
-### 目标检测
+# Define the output directories
+output_images_path = "/nas_data/SJY/code/yolov7/dataset/val/image"
+output_labels_path = "/nas_data/SJY/code/yolov7/dataset/val/annotations"
 
-[YOLOX概述_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1C44y1P7kJ?p=1&vd_source=3bd892ebd73374b8a997d6f84d7cccbb)
+# Create output directories if they do not exist
+os.makedirs(output_images_path, exist_ok=True)
+os.makedirs(output_labels_path, exist_ok=True)
 
-### 小样本学习
-#### 表征学习
-[DIM](/notes/FSL/%E8%A1%A8%E5%BE%81%E5%AD%A6%E4%B9%A0/DIM_AMDIM.md) 
-#### 跨域 
-[RDC](/notes/FSL/%E8%B7%A8%E5%9F%9F/RDC/RDC.md)
+# Load COCO API with the annotations file
+coco = COCO(annotations_path)
 
-#### 数据增强
+# Get the category ids for cell phones and humans
+cell_phone_category_id = coco.getCatIds(catNms=["cell phone"])
+human_category_id = coco.getCatIds(catNms=["person"])
 
-[delta encoder](/notes/FSL/%E6%95%B0%E6%8D%AE%E6%89%A9%E5%85%85/delta%20encoder_DTN.md)
+# Get all the image ids containing cell phones or humans
+cell_phone_image_ids = coco.getImgIds(catIds=cell_phone_category_id)
+human_image_ids = coco.getImgIds(catIds=human_category_id)
+combined_image_ids = list(set(cell_phone_image_ids + human_image_ids))
 
-#### 元学习
+# Create YOLO format labels for images containing cell phones or humans
+for img_id in combined_image_ids:
+    img_info = coco.loadImgs(img_id)[0]
+    img_filename = img_info["file_name"]
+    img_width = img_info["width"]
+    img_height = img_info["height"]
 
-[MAML](/notes/FSL/%E5%85%83%E5%AD%A6%E4%B9%A0/MAML.md)  
-[FCTransforer](/notes/FSL/%E5%85%83%E5%AD%A6%E4%B9%A0/FCTransformer/FCTransformer.md)
+    # Get the annotations for the current image
+    ann_ids = coco.getAnnIds(imgIds=img_id, catIds=(cell_phone_category_id + human_category_id), iscrowd=None)
+    anns = coco.loadAnns(ann_ids)
 
-#### 正则化
+    # Save the annotations in YOLO format
+    with open(os.path.join(output_labels_path, f"{img_id}.txt"), "w") as f:
+        for ann in anns:
+            yolo_bbox = convert_to_yolo_format(ann["bbox"], img_width, img_height)
+            category_id = ann["category_id"]
+            if category_id == cell_phone_category_id[0]:
+                yolo_label = 0
+            elif category_id == human_category_id[0]:
+                yolo_label = 1
+            f.write(f"{yolo_label} {' '.join(map(str, yolo_bbox))}\n")
 
-[S2M2](/notes/FSL/%E6%AD%A3%E5%88%99%E5%8C%96%E6%96%B9%E6%B3%95/S2M2(mixup)_LAPShot.md)
+    # Copy the image to the output directory
+    shutil.copy(os.path.join(coco_images_path, img_filename), os.path.join(output_images_path, img_filename))
 
-## 计算机配置
+print(f"Extracted {len(combined_image_ids)} cell phone and human images and converted annotations to YOLO format.")
 
-[clash](/notes/计算机配置/clash.md)   
+```
 
-[sourcetree](/notes/计算机配置/git_sourcetree.md)  
+### 统一文件名位数（用于图片指定标签）
 
-[Linux(Ubuntu)通过NFS服务挂载群晖NAS为虚拟磁盘](https://blog.csdn.net/chenzhiwen1998/article/details/119613471#:~:text=Linux)  
+```python
+import os
 
-[conda 指令](/notes/计算机配置/conda指令.md)
+def pad_and_rename_files(directory_path):
+    for file in os.listdir(directory_path):
+        file_name, file_ext = os.path.splitext(file)
 
-[挂载指令](/notes/计算机配置/挂载指令.md)
+        # Check if the file name is made up of digits only
+        if file_name.isdigit():
+            # Pad the file name with zeros to make it 12 digits
+            new_file_name = file_name.zfill(12)
+            new_file = f"{new_file_name}{file_ext}"
+
+            # Rename the file
+            src_file = os.path.join(directory_path, file)
+            dest_file = os.path.join(directory_path, new_file)
+            os.rename(src_file, dest_file)
+
+# Specify the directory containing the files to be renamed
+directory_path = "/nas_data/SJY/code/yolov7/person_phone/val/labels"
+
+# Rename the files
+pad_and_rename_files(directory_path)
+
+print("Renamed files with 12-digit padded names.")
+```
+
+
+
+
+## 图像处理
+### 将图像背景变透明
+
+```python
+# 输入图片路径和输出图片路径
+input_path = "/_media/logo.png"
+output_path = "/_media/logo_transparency.png"
+
+# 打开图片并将背景变为透明
+with Image.open(input_path) as im:
+    im = im.convert("RGBA")
+    data = im.getdata()
+
+    newData = []
+    for item in data:
+        # 将背景色的像素点变为透明
+        if item[0] == 255 and item[1] == 255 and item[2] == 255:
+            newData.append((255, 255, 255, 0))
+        else:
+            newData.append(item)
+
+    im.putdata(newData)
+
+    # 保存处理后的图片
+    im.save(output_path)
+```
+
 
