@@ -4,7 +4,7 @@
 ## 深度学习笔记
 
 ### YOLO
-
+[textPut中文显示](/notes/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/cv2.putText%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87.md)
 
 
 ### 数据集处理
