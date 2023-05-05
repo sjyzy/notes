@@ -30,7 +30,9 @@
 [130实验bug记录](/notes/130%E5%AE%9E%E9%AA%8Cbug%E8%AE%B0%E5%BD%95.md)  
 [mmcv_config笔记](/notes/mmcv_config%E7%AC%94%E8%AE%B0.md)  
 [python解释器以及注册机制](/notes/python%E8%A7%A3%E9%87%8A%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6.md)  
-[训练可视化工具哪款是你的菜？MMCV一行代码随你挑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/387078211)
+[训练可视化工具哪款是你的菜？MMCV一行代码随你挑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/387078211)  
+[追踪函数](/notes/mmlab/追踪函数.md)  
+
 
 ### 其他
 [pandas笔记](/notes/pandas%E7%AC%94%E8%AE%B0.md)    
