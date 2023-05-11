@@ -74,3 +74,4 @@
 
 [挂载指令](/notes/计算机配置/挂载指令.md)
 
+.[screnn](/notes/计算机配置/screen.md)
