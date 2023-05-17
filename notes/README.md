@@ -70,8 +70,8 @@
 
 [Linux(Ubuntu)通过NFS服务挂载群晖NAS为虚拟磁盘](https://blog.csdn.net/chenzhiwen1998/article/details/119613471#:~:text=Linux)  
 
-[conda 指令](/notes/计算机配置/conda指令.md)
+[conda 指令](/notes/计算机配置/conda指令.md)  
 
-[挂载指令](/notes/计算机配置/挂载指令.md)
+[挂载指令](/notes/计算机配置/挂载指令.md)  
 
-.[screnn](/notes/计算机配置/screen.md)
+[screnn](/notes/计算机配置/screen.md)
