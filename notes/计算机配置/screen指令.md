@@ -15,7 +15,7 @@ screen
 按:Ctrl+a, 再按:d, 即可退出screen, 此时,程序仍在后台执行;
 ```
 
-### 3. 查看当前已有的screen会话:
+## 3. 查看当前已有的screen会话:
 
 ```shell
 输入:screen -ls;
