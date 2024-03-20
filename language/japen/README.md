@@ -1,10 +1,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="/themes/newsprint.css"> -->
 
-# languge
-## 日语
-* [日语](/japen/)  
+# 日语
 
-## 英语
-
-* [英语](/english/)  
+## 50音
+* [50音](./50yin.md)  
 
