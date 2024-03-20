@@ -2,7 +2,7 @@
 
 # languge
 ## 日语
-* [日语](/japen/)  
+* [50yin](./japen/50yin.md)  
 
 ## 英语
 
