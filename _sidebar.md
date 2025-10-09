@@ -7,14 +7,11 @@
 
 * 学习
   * [《笔记》](/notes/)  
-  
   * [《实验数据》](/experiment/)  
-  
   * [《学习链接》](/interlinkage/)
-
   * [《code》](/code/)
-  
   * [《语言》](/language/)
+  * [《论文》](/paper)
 
 ---
 
