@@ -44,3 +44,20 @@ Ctrl+a+k: 杀死当前窗口;
 screen -S your_screen_name -X quit
 ```
 
+## 7.screenrc:
+
+```vim
+caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %= %{g}%H%{-}"
+defscrollback 1000
+# Set screen buffer
+defscrollback 40000
+
+# Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* ti@:te@
+
+# Enable status bar and display session name
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%S"
+```
+
