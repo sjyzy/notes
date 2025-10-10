@@ -10,12 +10,11 @@
 - 千金散尽还复来。
 - 
 
-[GitHub](https://github.com/sjyzy)
+[GitHub](https://github.com/sjyzy/notes)
 [Get Started](/)
 
 
 <!-- background color -->
 
 ![color](#ffffff)
-
 
