@@ -1,9 +1,16 @@
 <!-- <link rel="stylesheet" type="text/css" href="/themes/newsprint.css"> -->
 
-
 # 不以物喜，不以己悲
-## 三省吾身
 
+天行健，君子自强不息。
+
+他强任他强，清风拂山岗；他横任他横，明月照大江。
+
+任尔东西南北风，我自泰然处之，岿然不动。
+
+
+
+## 三省吾身
 
 少点功利主义得追求，多点不为什么得坚持（less interests more interests ）  
 
@@ -93,9 +100,8 @@ The mark of the immature man is that he wants to die nobly for a cause, While th
 
 没有确凿的证据，无论多么古老的想法或做法，都不能轻易相信，今天人人信奉或默认的真理，也许明天就被证实是谬论，不过也会有人认为它是雨云，会化作甘露洒向他们的田野。 --瓦尔登湖
 
-
-
 ## 没得选这事是人生常态
+
 无论你们最后生疏成什么样子  
 曾经对你的好都是真的  
 就算终有一散  
@@ -116,7 +122,7 @@ The mark of the immature man is that he wants to die nobly for a cause, While th
 而是在一起的每一天  
 ——林地说
 
- ## 岁月
+## 岁月
 
 岁月是画家，  
 一遍又一遍的填满空白。  
@@ -146,3 +152,17 @@ The mark of the immature man is that he wants to die nobly for a cause, While th
 也许在梦中，也许也从未存在过。  
 不计后果的爱情是青春，懂得知足的爱情是叹息，  
 天荒地老何尝不是愿望，得过且过也是一种美好。  
+
+# 淘金
+
+人生就像一场淘金
+
+以为这个地方有金子，然后拼命的挖。
+
+当挖的足够深的时候，以为另外的地方更有可能有金子。
+
+选择坚持，还是改变？
+
+但是我们永远无法知道下一秒挖出来的是金子还是屎。
+
+我们又该如何抉择？
