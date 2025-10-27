@@ -8,6 +8,8 @@
 
 [SimVP](/paper/STL/simVP.md)
 
+[tau](/paper/STL/tau.md)
+
 ## TTA
 
 [TENT](/paper/TTA/TENT.md)
