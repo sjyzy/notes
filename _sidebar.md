@@ -1,7 +1,8 @@
 <!-- docs/_sidebar.md -->
+
 <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"> -->
 
-*  **[SJY 记录美好生活](/)**
+* **[SJY 记录美好生活](/)**
 
 :smile::+1::+1::+1::+1::+1::+1:
 
@@ -11,11 +12,10 @@
   * [《学习链接》](/interlinkage/)
   * [《code》](/code/)
   * [《语言》](/language/)
-  * [《论文》](/paper)
+  * [《论文》](/paper/)
 
 ---
 
 * 生活
   * [《日志》](/diary/)
   * [《茶》](/tea/)
-
