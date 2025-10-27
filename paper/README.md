@@ -6,12 +6,14 @@
 
 [ConvLSTM](/paper/STL/covnlstm.md)
 
-[SimVP](./STL/simVP.md)
+[SimVP](/paper/STL/simVP.md)
 
 ## TTA
 
-[TENT](./TTA/TENT.md)
+[TENT](/paper/TTA/TENT.md)
 
-[VPTTA](./TTA/VPTTA.md)
+[VPTTA](/paper/TTA/VPTTA.md)
 
-[EATA](./TTA/EATA.md)
+[EATA](/paper/TTA/EATA.md)
+
+
