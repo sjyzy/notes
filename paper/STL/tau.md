@@ -30,6 +30,10 @@
 
 ## 三、模型框架
 
+![](/Users/sjyzy/Library/Application%20Support/marktext/images/2025-10-27-17-10-18-image.png)
+
+![](/Users/sjyzy/Library/Application%20Support/marktext/images/2025-10-27-17-10-33-image.png)
+
 ### 3.1 总体结构
 
 模型结构遵循通用三模块框架：
