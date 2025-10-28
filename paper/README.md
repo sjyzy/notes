@@ -10,6 +10,8 @@
 
 [tau](/paper/STL/tau.md)
 
+[WaST](/paper/STL/WaST_Paper_Notes.md)
+
 ## TTA
 
 [TENT](/paper/TTA/TENT.md)
@@ -17,5 +19,3 @@
 [VPTTA](/paper/TTA/VPTTA.md)
 
 [EATA](/paper/TTA/EATA.md)
-
-
