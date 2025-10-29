@@ -12,6 +12,8 @@
 
 [WaST](/paper/STL/WaST_Paper_Notes.md)
 
+[MotionRNN](/paper/STL/MotionRNN.md)
+
 ## TTA
 
 [TENT](/paper/TTA/TENT.md)
