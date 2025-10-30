@@ -59,6 +59,33 @@
 
 简而言之：ConvLSTM 将 “循环（时间）”＋“卷积（空间）”结合起来，非常适合处理诸如雷达回波图像这类“每帧是图像、多个帧是序列”的任务。  
 
+
+
+### 🧩 ConvLSTM 单元计算公式
+
+ConvLSTM 将传统 LSTM 的全连接操作替换为卷积运算，保持输入的空间结构。
+
+
+$\begin{aligned}
+i_t &= \sigma(W_{xi} * X_t + W_{hi} * H_{t-1} + W_{ci} \circ C_{t-1} + b_i) \\
+f_t &= \sigma(W_{xf} * X_t + W_{hf} * H_{t-1} + W_{cf} \circ C_{t-1} + b_f) \\
+C_t &= f_t \circ C_{t-1} + i_t \circ \tanh(W_{xc} * X_t + W_{hc} * H_{t-1} + b_c) \\
+o_t &= \sigma(W_{xo} * X_t + W_{ho} * H_{t-1} + W_{co} \circ C_t + b_o) \\
+H_t &= o_t \circ \tanh(C_t)
+\end{aligned}$
+
+其中：
+
+- “*” 表示卷积操作（convolution）；
+- “∘” 表示逐元素乘（Hadamard product）；
+- \(X_t\)：当前输入帧；
+- \(H_{t-1}\)：上一时刻隐藏状态；
+- \(C_{t-1}\)：上一时刻记忆单元；
+- \(i_t, f_t, o_t\)：分别为输入门、遗忘门、输出门；
+- \(W_{x•}, W_{h•}, W_{c•}, b•\)：卷积核与偏置参数；
+- \(\sigma\)：sigmoid 激活函数；
+- \(\tanh\)：双曲正切激活函数。
+
 ### 3.2 编码-预测（Encoding-Forecasting）架构
 
 为完成多帧输入／多帧输出任务，作者构建如下结构：  
